@@ -1,16 +1,20 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    binding_of_caller (0.8.0)
+      debug_inspector (>= 0.0.1)
     childprocess (3.0.0)
     concurrent-ruby (1.1.8)
     data_magic (1.2)
       faker (>= 1.1.2)
       yml_reader (>= 0.6)
+    debug_inspector (1.0.0)
     faker (2.16.0)
       i18n (>= 1.6, < 2)
-    headless (2.3.1)
     i18n (1.8.8)
       concurrent-ruby (~> 1.0)
+    mini_magick (4.11.0)
+    os (1.1.1)
     page-object (2.2.6)
       page_navigation (>= 0.10)
       selenium-webdriver (~> 3.0)
@@ -25,15 +29,21 @@ GEM
     watir (6.17.0)
       regexp_parser (~> 1.2)
       selenium-webdriver (~> 3.6)
+    watir-screenshot-stitch (0.7.6)
+      binding_of_caller (~> 0.7)
+      mini_magick (~> 4.0)
+      os (~> 1.0)
+      rubyzip (~> 2.0)
+      watir (~> 6.12)
     yml_reader (0.7)
 
 PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
-  headless
   page-object
   watir
+  watir-screenshot-stitch
 
 BUNDLED WITH
    2.2.7
